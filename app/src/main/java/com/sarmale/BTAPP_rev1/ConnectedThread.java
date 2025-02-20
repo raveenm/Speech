@@ -1,8 +1,7 @@
-package com.sarmale.arduinobtexample_v3;
+package com.sarmale.BTAPP_rev1;
 
 
 import android.bluetooth.BluetoothSocket;
-import android.os.Handler;
 import android.util.Log;
 
 import java.io.IOException;

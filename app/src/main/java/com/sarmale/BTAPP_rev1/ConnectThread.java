@@ -1,4 +1,4 @@
-package com.sarmale.arduinobtexample_v3;
+package com.sarmale.BTAPP_rev1;
 
 import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothDevice;
