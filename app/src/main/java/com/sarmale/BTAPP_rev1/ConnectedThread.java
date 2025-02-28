@@ -78,6 +78,28 @@ public class ConnectedThread extends Thread {
 
     }
 
+    public void write(byte[] bytes) {
+        try {
+            int chunkSize = 64; // Bluetooth HC-05 buffer size (adjust if needed)
+            int offset = 0; // Track current position
+
+            while (offset < bytes.length) {
+                int bytesToSend = Math.min(chunkSize, bytes.length - offset);
+                mmOutStream.write(bytes, offset, bytesToSend);
+                mmOutStream.flush(); // Ensure data is sent immediately
+                offset += bytesToSend;
+
+                Log.d(TAG, "Sent chunk: " + new String(bytes, offset - bytesToSend, bytesToSend));
+                Thread.sleep(50); // Short delay to prevent buffer overflow
+            }
+
+            Log.d(TAG, "Finished sending full message.");
+        } catch (IOException | InterruptedException e) {
+            Log.e(TAG, "Error writing to output stream", e);
+        }
+    }
+
+
     // Call this method from the main activity to shut down the connection.
     public void cancel() {
         try {

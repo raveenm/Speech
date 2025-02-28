@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="300dp"
         android:enabled="false"
         android:text="Connect to HC-05"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,19 +72,30 @@
         android:id="@+id/refresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="624dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="592dp"
         android:text="Clear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
+    <Button
+        android:id="@+id/buttonGoToSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="592dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Transcription" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BTAPP_rev1"
-        android:textSize="36sp"
+        android:text="Place Holder"
+        android:textSize="0sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -104,6 +115,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.732" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
