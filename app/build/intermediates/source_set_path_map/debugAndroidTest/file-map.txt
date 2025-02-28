@@ -1,0 +1,6 @@
+com.sarmale.BTAPP_rev1.test.app-annotation-experimental-1.4.0-0 C:\Users\makeish\.gradle\caches\transforms-3\85b9a494594b930d6bb7f069836e1e0e\transformed\annotation-experimental-1.4.0\res
+com.sarmale.BTAPP_rev1.test.app-core-1.5.0-1 C:\Users\makeish\.gradle\caches\transforms-3\9750431f83966a4bea72474ab59e8019\transformed\core-1.5.0\res
+com.sarmale.BTAPP_rev1.test.app-androidTest-2 C:\Users\makeish\AndroidStudioProjects\BTAPP_rev7\app\build\generated\res\resValues\androidTest\debug
+com.sarmale.BTAPP_rev1.test.app-mergeDebugAndroidTestResources-3 C:\Users\makeish\AndroidStudioProjects\BTAPP_rev7\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.sarmale.BTAPP_rev1.test.app-mergeDebugAndroidTestResources-4 C:\Users\makeish\AndroidStudioProjects\BTAPP_rev7\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.sarmale.BTAPP_rev1.test.app-merged_res-5 C:\Users\makeish\AndroidStudioProjects\BTAPP_rev7\app\build\intermediates\merged_res\debugAndroidTest

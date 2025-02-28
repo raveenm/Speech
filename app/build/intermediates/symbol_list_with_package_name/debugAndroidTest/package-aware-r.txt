@@ -1,0 +1,3 @@
+com.sarmale.BTAPP_rev1.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

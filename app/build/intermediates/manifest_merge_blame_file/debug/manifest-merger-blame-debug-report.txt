@@ -1,0 +1,172 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sarmale.arduinobtexample_v3"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10    <!-- Request legacy Bluetooth permissions on older devices. -->
+11    <uses-permission
+11-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:6:5-8:38
+12        android:name="android.permission.BLUETOOTH"
+12-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:7:9-52
+13        android:maxSdkVersion="30" />
+13-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:8:9-35
+14    <uses-permission
+14-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:9:5-11:38
+15        android:name="android.permission.BLUETOOTH_ADMIN"
+15-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:10:9-58
+16        android:maxSdkVersion="30" />
+16-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:11:9-35
+17    <!--
+18 Needed only if your app looks for Bluetooth devices.
+19         If your app doesn't use Bluetooth scan results to derive physical
+20         location information, you can strongly assert that your app
+21         doesn't derive physical location.
+22    -->
+23    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+23-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:18:5-73
+23-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:18:22-70
+24
+25    <!--
+26 Needed only if your app makes the device discoverable to Bluetooth
+27         devices.
+28    -->
+29    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+29-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:24:5-78
+29-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:24:22-75
+30    <!--
+31 Needed only if your app communicates with already-paired Bluetooth
+32         devices.
+33    -->
+34    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+34-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:29:5-77
+34-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:29:22-75
+35    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+35-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:31:5-76
+35-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:31:22-73
+36
+37    <permission
+37-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+38        android:name="com.sarmale.arduinobtexample_v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.sarmale.arduinobtexample_v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+42
+43    <application
+43-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:33:5-54:19
+44        android:allowBackup="true"
+44-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:35:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.0] C:\Users\makeish\.gradle\caches\transforms-3\8fc1251317869a3604c05b333c26e214\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:icon="@mipmap/ic_launcher"
+48-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:36:9-43
+49        android:label="BTAPP_rev1"
+49-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:37:9-35
+50        android:roundIcon="@mipmap/ic_launcher_round"
+50-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:38:9-54
+51        android:supportsRtl="true"
+51-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:39:9-35
+52        android:testOnly="true"
+53        android:theme="@style/Theme.ArduinoBTExamplev3" >
+53-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:40:9-56
+54        <activity
+54-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:42:9-44:39
+55            android:name="com.sarmale.BTAPP_rev1.SecondActivity"
+55-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:43:13-43
+56            android:exported="true" />
+56-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:44:13-36
+57        <activity
+57-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:45:9-53:20
+58            android:name="com.sarmale.BTAPP_rev1.MainActivity"
+58-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:46:13-41
+59            android:exported="true" >
+59-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:47:13-36
+60            <intent-filter>
+60-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:48:13-52:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:49:17-69
+61-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:49:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:51:17-77
+63-->C:\Users\makeish\AndroidStudioProjects\BTAPP_rev10\app\src\main\AndroidManifest.xml:51:27-74
+64            </intent-filter>
+65        </activity>
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+69            android:authorities="com.sarmale.arduinobtexample_v3.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makeish\.gradle\caches\transforms-3\73898d6b9e4b9aa792280f8586ec2357\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\makeish\.gradle\caches\transforms-3\abf602b40c73995b81263935bf643b6c\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\makeish\.gradle\caches\transforms-3\abf602b40c73995b81263935bf643b6c\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\makeish\.gradle\caches\transforms-3\abf602b40c73995b81263935bf643b6c\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+79                android:value="androidx.startup" />
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+80        </provider>
+81
+82        <receiver
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+84            android:directBootAware="false"
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+85            android:enabled="true"
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+86            android:exported="true"
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\makeish\.gradle\caches\transforms-3\3fc6b1ccb7d0c9a32b6b4349ca421403\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>
