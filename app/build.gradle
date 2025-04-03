@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sarmale.BTAPP_rev1'
+    namespace 'com.sarmale.SightSync'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.sarmale.arduinobtexample_v3"
+        applicationId "com.sarmale.SightSync"
         minSdk 26
         targetSdk 35
         versionCode 1

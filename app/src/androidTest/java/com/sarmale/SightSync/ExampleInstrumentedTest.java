@@ -1,4 +1,4 @@
-package com.sarmale.BTAPP_rev1;
+package com.sarmale.SightSync;
 
 import android.content.Context;
 

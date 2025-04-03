@@ -1,4 +1,4 @@
-package com.sarmale.BTAPP_rev1;
+package com.sarmale.SightSync;
 
 
 import android.bluetooth.BluetoothSocket;
@@ -12,7 +12,7 @@ import java.io.OutputStream;
 //Open, manage and close the data Stream from the Arduino BT device
 public class ConnectedThread extends Thread {
 
-    private static final String TAG = "FrugalLogs";
+    private static final String TAG = "ConnectedThread";
     private final BluetoothSocket mmSocket;
     private final InputStream mmInStream;
     private final OutputStream mmOutStream;
@@ -40,6 +40,8 @@ public class ConnectedThread extends Thread {
         mmInStream = tmpIn;
         mmOutStream = tmpOut;
     }
+
+
 
     public String getValueRead(){
         return valueRead;
@@ -80,21 +82,10 @@ public class ConnectedThread extends Thread {
 
     public void write(byte[] bytes) {
         try {
-            int chunkSize = 64; // Bluetooth HC-05 buffer size (adjust if needed)
-            int offset = 0; // Track current position
-
-            while (offset < bytes.length) {
-                int bytesToSend = Math.min(chunkSize, bytes.length - offset);
-                mmOutStream.write(bytes, offset, bytesToSend);
-                mmOutStream.flush(); // Ensure data is sent immediately
-                offset += bytesToSend;
-
-                Log.d(TAG, "Sent chunk: " + new String(bytes, offset - bytesToSend, bytesToSend));
-                Thread.sleep(50); // Short delay to prevent buffer overflow
-            }
-
-            Log.d(TAG, "Finished sending full message.");
-        } catch (IOException | InterruptedException e) {
+            mmOutStream.write(bytes);
+            mmOutStream.flush();
+            Log.d(TAG, "Sent full message: " + new String(bytes));
+        } catch (IOException e) {
             Log.e(TAG, "Error writing to output stream", e);
         }
     }
