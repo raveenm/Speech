@@ -85,8 +85,11 @@ public class ConnectedThread extends Thread {
             mmOutStream.write(bytes);
             mmOutStream.flush();
             Log.d(TAG, "Sent full message: " + new String(bytes));
+            Thread.sleep(50);
         } catch (IOException e) {
             Log.e(TAG, "Error writing to output stream", e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 

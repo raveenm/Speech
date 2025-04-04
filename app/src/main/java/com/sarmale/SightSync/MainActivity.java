@@ -490,15 +490,18 @@ public class MainActivity extends AppCompatActivity {
                     String recognizedText = data.get(0);
                     textView.setText(recognizedText);
 
+
                     // Find the new part
-                    String newPart = getNewWords(previousText, recognizedText);
+                        String newPart = getNewWords(previousText, recognizedText);
+
                     previousText = recognizedText;
 
                     if (!newPart.isEmpty() || !newPart.equals("")) {
                         //Log.d(TAG, "New words: " + newPart);
-                        processRecognizedText(newPart + " \n");
+                        new Handler().postDelayed(() -> { processRecognizedText(newPart + " \n"); }, 500);
                     }
 
+                     // Increased delay to 500ms
                     //processRecognizedText(recognizedText);
                 }
             }
